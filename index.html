@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter</title>
+	<link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<header>
+		<div class="inicio"><i class="fa fa-home" aria-hidden="true">Inicio</i></div>
+		<div class="notificaciones"><i class="fa fa-bell-o" aria-hidden="true">Notificaciones</i></div>
+		<div class="mensajes"><i class="fa fa-envelope-o" aria-hidden="true"></i>Mensajes</div>
+		<div class="icono"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+		<div class="buscar">
+			<span>Buscar en twitter</span>
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+	</header>
+	<section id="left"></section>
+	<section id="text-section">
+		<div id="tweet-area">
+			<textarea rows='1' class="txt" id="comment" oninput="charCount()" placeholder="What's Happening?"></textarea>
+			<button type="button" id="btn" onclick="add()">Tweet</button>
+			<span id="counter">140</span>
+		</div>
+		<div class="cont">
+			
+		</div>
+	</section>
+	<section id="right"></section>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
