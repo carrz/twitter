@@ -7,19 +7,68 @@
 </head>
 <body>
 	<header>
-		<div class="inicio"><i class="fa fa-home" aria-hidden="true">Inicio</i></div>
-		<div class="notificaciones"><i class="fa fa-bell-o" aria-hidden="true">Notificaciones</i></div>
-		<div class="mensajes"><i class="fa fa-envelope-o" aria-hidden="true"></i>Mensajes</div>
-		<div class="icono"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+		<div class="inicio divHeader"><i class="fa fa-home" aria-hidden="true"></i><span class="nameHeader">Home</span></div>
+		<div class="notificaciones divHeader"><i class="fa fa-bell-o" aria-hidden="true"></i><span class="nameHeader">Notifications</span></div>
+		<div class="mensajes divHeader"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="nameHeader">Messages</span></div>
+		<div class="icono"><a href="https://twitter.com" class="a-bird"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
 		<div class="buscar">
-			<span>Buscar en twitter</span>
-			<i class="fa fa-search" aria-hidden="true"></i>
+			<form>
+				<span>Search Twitter</span>
+				<i class="fa fa-search search-icon" aria-hidden="true"></i>
+			</form>
 		</div>
 	</header>
-	<section id="left"></section>
+	<section id="left">
+		<div class="profile">
+			<div class="large-photo"><img src="assets/img/wolf.jpg" class="larPhoto"></div>
+			<div class="name">
+				<h3 class="user">Lumpy Space Princess</h3>
+				<h4 class="twName">@LSP</h4>
+				<div class="followBox">
+					<ul>
+						<li>
+							<a href="#">
+								<h5 class="follow">Tweets</h5>
+								<h4 class="followNumber">499</h4>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h5 class="follow">Following</h5>
+								<h4 class="followNumber">1</h4>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h5 class="follow">Followers</h5>
+								<h4 class="followNumber">999K</h4>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="round-photo"><img src="assets/img/grumosa.jpg" class="rouPhoto"></div>
+		</div>
+		<div class="trends">
+			<h2 class="trends-title">Trends for you</h2>
+			<ul class="trends-list">
+				<li class="trend-item">#AdventureTime</li>
+				<li class="trend-item">#TheAmazingWorldOfGumball</li>
+				<li class="trend-item">#Clarence</li>
+				<li class="trend-item">#RegularShow</li>
+				<li class="trend-item">#StevenUniverse</li>
+				<li class="trend-item">#GravityFalls</li>
+				<li class="trend-item">Rick and Morty</li>
+				<li class="trend-item">#WeBareBears</li>
+				<li class="trend-item">#SamuraiJack</li>
+				<li class="trend-item">#UncleGrandpa</li>
+			</ul>
+		</div>
+	</section>
 	<section id="text-section">
 		<div id="tweet-area">
-			<textarea rows='1' class="txt" id="comment" oninput="charCount()" placeholder="What's Happening?"></textarea>
+			<textarea rows='1' class="txt" id="comment" oninput="charCount()" placeholder="What the lump?"></textarea>
+			<div class="avatar"><img src="assets/img/grumosa.jpg" class="avatar-photo"></div>
 			<button type="button" id="btn" onclick="add()">Tweet</button>
 			<span id="counter">140</span>
 		</div>

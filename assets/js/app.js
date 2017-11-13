@@ -33,11 +33,14 @@ function add() {
 	var comments = document.getElementById("comment").value; // Agarra al comentario
 	document.getElementById("comment").value = ""; // Limpia la caja de comentarios
 	charCount();
+	document.getElementById('btn').disabled = true;
 	var newComments = document.createElement('div'); //Creamos el contenedor para los comentarios
+	newComments.classList.add("comment-div");
 	var cont = document.getElementsByClassName('cont')[0]; //Obtenemos el ID del contenedor
 	
 	//Creo un párrafo (papá)
 		var paragraph = document.createElement('p');
+		paragraph.classList.add("paragraph")
 		paragraph.classList.add('color');
 	//Creamos un nodo de texto (hijo)
 		var nodoText = document.createTextNode(comments);
